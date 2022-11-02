@@ -1,0 +1,24 @@
+
+COLEGIO UNIVERSITARIO IES 21
+TRABAJO PRACTICO 
+PROCESAMIENTO DE GRANDES VOLUMENES DE DATOS
+-------------------------------------------
+
+Desarrolle una aplicación en Python para crear una base de datos Neo4j
+y obtener el importe total de sueldos pagados por sector, 
+los datos a visualizar son el nombre del sector y el importe total
+de sueldos pagados por sector.
+
+Los datos de la entidad “Empleado” son: dni, nombre y sueldo.
+
+Los datos de la entidad “Sector” son: nro y nombre.
+
+La relación entre la entidad “Empleado” y la entidad “Sector” es “TRABAJA_EN”.
+
+Los datos para crear la base de datos están almacenados en 3 archivos 
+en formato JSON llamados: empleados.json, sectores.json y trabaja_en.json.
+
+Respete mayúscula y minúscula en el nombre de las entidades, 
+atributos y relaciones.
+
+
