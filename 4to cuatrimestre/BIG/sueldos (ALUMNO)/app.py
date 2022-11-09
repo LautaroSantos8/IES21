@@ -7,13 +7,11 @@ def CargarDatos():
     with open('data/empleados.json') as archivo:
         filas = json.load(archivo)
         for fila in filas:
-        #print("CREATE (:Empleado { "+ f"dni: {fila['dni']}, nombre: '{fila['nombre']}', sueldo: {fila['sueldo']}" + "})")
             q1= "CREATE (:Empleado { "+ f"dni: {fila['dni']}, nombre: '{fila['nombre']}', sueldo: {fila['sueldo']}" + "})"
             sesion.run(q1)
     with open('data/sectores.json') as archivo:
         filas = json.load(archivo)
         for fila in filas:
-        #print("CREATE (:Sectores { "+ f"nro: {fila['nro']}, nombre: '{fila['nombre']}'" + "})")
             q1= "CREATE (:Sectores { "+ f"nro: {fila['nro']}, nombre: '{fila['nombre']}'" + "})"
             sesion.run(q1)
 ############################ Relaciones ############################
